@@ -1,0 +1,114 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.body{
+    background-color: #dddddd;
+}
+.wrap{
+    width: 1200px;
+    height: 700px;
+    padding-top:50px;
+    padding-bottom:50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.pink{
+    float:left;
+    width: 800px;
+    height: 650px;
+    background: #ffedf7;
+    position: relative;
+}
+.blue{
+    float:left;
+    width: 400px;
+    height: 650px;
+    background: #003162;
+}
+.pink-inner{
+    width: 500px;
+    height: 550px;
+    position: absolute;
+    left: 15%;
+    top:5%;
+}
+.btn1Div{
+    width: 500px;
+    height: 150px;
+}
+.text1{
+    width:350px;
+    height: 40px;
+    float: left;
+    border: none;
+    padding:0;
+    font-size: 20px;
+}
+.btn1{
+    width: 30px;
+    height: 40px;
+    background: white;
+    float:left;
+    color: #ff4382;
+    text-align: center;
+    line-height: 40px;
+}
+.ul1Div{
+    width: 500px;
+    height: 150px;
+    margin-top:50px;
+}
+.clock{
+    width: 500px;
+    height: 200px;
+}
+.ul2Div{
+    width: 500px;
+    height: 150px;
+    margin-top:50px;
+}
