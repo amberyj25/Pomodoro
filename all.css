@@ -52,23 +52,41 @@ table {
 .wrap{
     width: 1200px;
     height: 700px;
-    padding-top:50px;
-    padding-bottom:50px;
-    padding-left: 100px;
-    padding-right: 100px;
+    margin-top:50px;
+    margin-bottom:50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative;
 }
 .pink{
     float:left;
-    width: 800px;
-    height: 650px;
+    width: 1200px;
+    height: 700px;
     background: #ffedf7;
     position: relative;
+    left: 0px;
+    top: 0px; 
+    z-index: 1;
 }
 .blue{
     float:left;
     width: 400px;
-    height: 650px;
+    height: 700px;
     background: #003162;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 2;
+}
+.clockCircle {
+    width: 500px;
+    height: 400px;
+    background: url(img/clock.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 50.6%;
+    top: 15%;
+    z-index: 3;
 }
 .pink-inner{
     width: 500px;
@@ -76,6 +94,41 @@ table {
     position: absolute;
     left: 15%;
     top:5%;
+}
+.blue-inner{
+    width: 50px;
+    height: 700px;
+    position: absolute;
+    right: 100px;
+    bottom:0;
+    z-index: 3;
+}
+.rightBannerIcon{
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.one{
+    background: url(img/icon1.png) no-repeat;
+    background-size: contain;
+}
+.two{
+    background: url(img/icon2.png) no-repeat;
+    background-size: contain;
+}
+.three{
+    background:url(img/icon3.png) no-repeat;
+    background-size: contain;
+}
+.rightBannerText{
+    width: 30px;
+    height: 100px;
+    background: url(img/text.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 10%;
+    margin-left: 10px;
 }
 .btn1Div{
     width: 500px;
@@ -111,4 +164,9 @@ table {
     width: 500px;
     height: 150px;
     margin-top:50px;
+}
+.toDoListBlue{
+    width: 1200px;
+    height: 700px;
+    background: #003162;
 }
