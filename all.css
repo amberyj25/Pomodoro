@@ -109,24 +109,24 @@ table {
     margin-top: 50px;
     margin-bottom: 20px;
 }
-.one{
+.blue-inner .one{
     background: url(img/icon1.png) no-repeat;
     background-size: contain;
 }
 
-.two{
+.blue-inner .two{
     background: url(img/icon2.png) no-repeat;
     background-size: contain;
 }
-.three{
+.blue-inner .three{
     background:url(img/icon3.png) no-repeat;
     background-size: contain;
 }
-.toDoListHtml{
+.blue-inner .toDoListHtml{
     background: url(img/icon5.png) no-repeat;
     background-size: 80% 80%;
 }
-.rightText{
+.blue-inner .rightText{
     width: 30px;
     height: 100px;
     background: url(img/text.png) no-repeat;
@@ -212,7 +212,7 @@ table {
     color: yellow;
     margin-left: 15px;
 }
-.addList{
+.center{
     width: 450px;
     height: 700px;
     position: absolute;
@@ -240,7 +240,7 @@ table {
     line-height: 40px;
     background: white;
 }
-.toDoListH .banner{
+.content .banner{
     width:350px;
     height: 40px;
     background: #335a82;
@@ -252,7 +252,7 @@ table {
     color: white;
     float: left;
 }
-.toDoListH .button{
+.content .button{
     width: 30px;
     height: 40px;
     background: url(img/icon4.png) no-repeat;
@@ -260,15 +260,15 @@ table {
     float: left;
     margin-top: 20px;
 }
-.toDoListH .clearfix{
+.content .clearfix{
     clear: both;
 }
-.toDoListH ul{
+.content ul{
     font-size: 25px;
     box-sizing: border-box;
     padding-top: 15px;
 }
-.toDoListH ul li{
+.content ul li{
     margin-bottom: 10px;
     color: pink;
 }
