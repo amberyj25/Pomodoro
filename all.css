@@ -272,3 +272,17 @@ table {
     margin-bottom: 10px;
     color: pink;
 }
+.center .newbanner{
+    width:450px;
+    height: 40px;
+    background: #335a82;
+    box-sizing: border-box;
+    padding-left: 10px;
+    line-height: 40px;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+}
+.center .one{
+    margin-top: 80px;
+}
