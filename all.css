@@ -103,7 +103,7 @@ table {
     bottom:0;
     z-index: 3;
 }
-.rightBannerIcon{
+.rightIcon{
     width: 50px;
     height: 50px;
     margin-top: 50px;
@@ -113,6 +113,7 @@ table {
     background: url(img/icon1.png) no-repeat;
     background-size: contain;
 }
+
 .two{
     background: url(img/icon2.png) no-repeat;
     background-size: contain;
@@ -121,7 +122,11 @@ table {
     background:url(img/icon3.png) no-repeat;
     background-size: contain;
 }
-.rightBannerText{
+.toDoListHtml{
+    background: url(img/icon5.png) no-repeat;
+    background-size: 80% 80%;
+}
+.rightText{
     width: 30px;
     height: 100px;
     background: url(img/text.png) no-repeat;
@@ -129,6 +134,11 @@ table {
     position: absolute;
     bottom: 10%;
     margin-left: 10px;
+}
+.rightIcon a{
+    display: block;
+    width: 50px;
+    height: 50px;
 }
 .btn1Div{
     width: 500px;
@@ -139,8 +149,9 @@ table {
     height: 40px;
     float: left;
     border: none;
-    padding:0;
+    padding-left: 15px;
     font-size: 20px;
+    box-sizing: border-box;
 }
 .btn1{
     width: 30px;
@@ -165,8 +176,99 @@ table {
     height: 150px;
     margin-top:50px;
 }
+.ul2 li{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
 .toDoListBlue{
     width: 1200px;
     height: 700px;
     background: #003162;
+}
+.leftMenu{
+    width: 250px;
+    height: 400px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+.leftMenuIcon{
+    width: 250px;
+    height: 50px;
+    margin-bottom: 35px; 
+}
+.leftMenuIcon img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    float: left;
+}
+.leftMenuIcon p{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    float: left;
+    color: yellow;
+    margin-left: 15px;
+}
+.addList{
+    width: 450px;
+    height: 700px;
+    position: absolute;
+    left: 40%;
+    top: 0;
+}
+.text{
+    width: 450px;
+    height: 40px;
+    margin-top: 80px;
+}
+.text.text1{
+    width:350px;
+    height: 40px;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+.text .btn{
+    width: 30px;
+    height: 40px;
+    color: #ff4382;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    background: white;
+}
+.toDoListH .banner{
+    width:350px;
+    height: 40px;
+    background: #335a82;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    line-height: 40px;
+    font-size: 25px;
+    color: white;
+    float: left;
+}
+.toDoListH .button{
+    width: 30px;
+    height: 40px;
+    background: url(img/icon4.png) no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin-top: 20px;
+}
+.toDoListH .clearfix{
+    clear: both;
+}
+.toDoListH ul{
+    font-size: 25px;
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+.toDoListH ul li{
+    margin-bottom: 10px;
+    color: pink;
 }

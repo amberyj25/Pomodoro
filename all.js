@@ -2,6 +2,7 @@
 //再做刪除
 var btn1 =document.querySelector(".btn1");
 var ul2=document.querySelector(".ul2");
+var toDoList=document.querySelector(".one");
 var data=JSON.parse(localStorage.getItem("list")) ||[];
 addList(data);
 function updateList(){
