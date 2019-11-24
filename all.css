@@ -119,7 +119,7 @@ table {
     background-size: contain;
 }
 .blue-inner .three{
-    background:url(img/icon3.png) no-repeat;
+    background: url(img/icon3.png) no-repeat;
     background-size: contain;
 }
 .blue-inner .toDoListHtml{
@@ -135,7 +135,7 @@ table {
     bottom: 10%;
     margin-left: 10px;
 }
-.rightIcon a{
+.blue-inner a{
     display: block;
     width: 50px;
     height: 50px;
