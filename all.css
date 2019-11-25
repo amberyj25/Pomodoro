@@ -79,7 +79,7 @@ table {
     z-index: 2;
 }
 .clockCircle {
-    width: 500px;
+    width: 400px;
     height: 400px;
     background: url(img/clock.png) no-repeat;
     background-size: contain;

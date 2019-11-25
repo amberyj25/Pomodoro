@@ -31,3 +31,9 @@ function dele(e){
     addList(data);
 };
 ul2.addEventListener("click",dele,false);
+//var two= document.querySelector(".two");
+// function twoClick(){
+//     window.open("https://www.youtube.com/watch?v=7eyMLeFvVBg&list=RDyzr4vItHf24&index=25")
+// };
+
+// two.addEventListener("click",twoClick,false);
