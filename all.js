@@ -1,6 +1,7 @@
 //先把輸入的印出來
 //再做刪除
 var btn1 =document.querySelector(".btn1");
+var ul1=document.querySelector(".ul1");
 var ul2=document.querySelector(".ul2");
 var toDoList=document.querySelector(".one");
 var data=JSON.parse(localStorage.getItem("list")) ||[];
@@ -26,9 +27,11 @@ function addList(item){
 function dele(e){
     var num =e.target.dataset.num;
     var nodeName=e.target.nodeName;
-    console.log(num);
+    var ul1Value=e.target.textContent;
+    console.log(e.target.textContent);
     if(nodeName !== "H2"){return};
     data.splice(num,1);
     addList(data);
+    ul1.innerHTML='<li>'+ul1Value+'</li>';
 };
 ul2.addEventListener("click",dele,false);
