@@ -18,7 +18,7 @@ btn1.addEventListener("click",updateList,false);
 function addList(item){
     var str="";
     for(var i=0;i<item.length;i++){
-    str +='<li data-num="'+i+'">'+item[i].content+'</li>';
+        str +='<li><h2 data-num="'+i+'">'+item[i].content+'</h2><img src="img/icon6.png"></li>';
     }
     ul2.innerHTML=str;
 };
@@ -26,14 +26,9 @@ function addList(item){
 function dele(e){
     var num =e.target.dataset.num;
     var nodeName=e.target.nodeName;
-    if(nodeName !== "LI"){return};
+    console.log(num);
+    if(nodeName !== "H2"){return};
     data.splice(num,1);
     addList(data);
 };
 ul2.addEventListener("click",dele,false);
-//var two= document.querySelector(".two");
-// function twoClick(){
-//     window.open("https://www.youtube.com/watch?v=7eyMLeFvVBg&list=RDyzr4vItHf24&index=25")
-// };
-
-// two.addEventListener("click",twoClick,false);
