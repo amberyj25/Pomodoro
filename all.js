@@ -3,6 +3,7 @@
 var btn1 =document.querySelector(".btn1");
 var ul1=document.querySelector(".ul1");
 var ul2=document.querySelector(".ul2");
+var ul2Img=document.querySelector(".ul2 li img");
 var toDoList=document.querySelector(".one");
 var data=JSON.parse(localStorage.getItem("list")) ||[];
 addList(data);
@@ -19,19 +20,19 @@ btn1.addEventListener("click",updateList,false);
 function addList(item){
     var str="";
     for(var i=0;i<item.length;i++){
-        str +='<li><h2 data-num="'+i+'">'+item[i].content+'</h2><img src="img/icon6.png"></li>';
+        str +='<li data-num="'+i+'"><h2 data-num="'+i+'">'+item[i].content+'</h2><img src="img/icon6.png" data-num="'+i+'"></li>';
     }
     ul2.innerHTML=str;
 };
-
 function dele(e){
     var num =e.target.dataset.num;
     var nodeName=e.target.nodeName;
-    var ul1Value=e.target.textContent;
-    console.log(e.target.textContent);
-    if(nodeName !== "H2"){return};
+    if(nodeName== "H2"){return};
+    if(nodeName =="IMG"){
+        ul1.innerHTML="<li>"+data[num].content+"</li>";
+    };
+    console.log(nodeName);
     data.splice(num,1);
     addList(data);
-    ul1.innerHTML='<li>'+ul1Value+'</li>';
 };
-ul2.addEventListener("click",dele,false);
+ul2.addEventListener("click",dele,false); 
