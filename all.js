@@ -33,6 +33,7 @@ function dele(e){
     };
     console.log(nodeName);
     data.splice(num,1);
+    localStorage.setItem("list",JSON.stringify(data));
     addList(data);
 };
 ul2.addEventListener("click",dele,false); 

@@ -16,19 +16,22 @@ btn.addEventListener("click",addList,false);
 function list(item){
     var str="";
     for(var i=0;i<item.length;i++){
-        str +='<li data-num="'+i+'">'+item[i].content+'</li>';
+        str +='<li><h2 data-num="'+i+'">'+item[i].content+'</h2><img src="img/icon6.png" data-num="'+i+'"></li>';
     };
     toDoListUl.innerHTML=str;
 };
-var str1=""; 
+var str1="";
 function addDone(e){
-    var va= e.target.textContent;
+    var text= e.target.textContent;
     var num=e.target.dataset.num;
-    console.log(num)
-    str1 +="<li>"+va+"</li>";
+    var nodeName=e.target.nodeName; 
+    if(nodeName == "LI"){
+    str1 +="<li>"+text+"</li>";
     doneContentUl.innerHTML=str1;
     data.splice(num,1);
-    list(data);
+    localStorage.setItem("list",JSON.stringify(data));
+    list(data)
+    };
 };
 toDoListUl.addEventListener("click",addDone,false);
 var toDoListDiv=document.querySelector(".toDoList");
