@@ -16,7 +16,7 @@ btn.addEventListener("click",addList,false);
 function list(item){
     var str="";
     for(var i=0;i<item.length;i++){
-        str +='<li><h2 data-num="'+i+'">'+item[i].content+'</h2><img src="img/icon6.png" data-num="'+i+'"></li>';
+        str +='<li data-num="'+i+'"><h2 data-num="'+i+'">'+item[i].content+'</h2><img src="img/icon6.png" data-num="'+i+'"></li>';
     };
     toDoListUl.innerHTML=str;
 };
@@ -28,6 +28,8 @@ function addDone(e){
     if(nodeName == "LI"){
     str1 +="<li>"+text+"</li>";
     doneContentUl.innerHTML=str1;
+    console.log(num);
+    console.log(e.target.nodeName);
     data.splice(num,1);
     localStorage.setItem("list",JSON.stringify(data));
     list(data)
